@@ -26,6 +26,7 @@ const Comments = (props) => {
     };
     const response = await db.collection("comments").doc().set(saveComment);
     setData(data.concat(saveComment));
+    setInputComment("");
   };
 
   const getMyComments = async () => {
