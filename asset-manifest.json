@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/FirebaseApp/static/css/main.9efe041e.chunk.css",
+    "main.js": "/FirebaseApp/static/js/main.f160e52e.chunk.js",
+    "main.js.map": "/FirebaseApp/static/js/main.f160e52e.chunk.js.map",
+    "runtime-main.js": "/FirebaseApp/static/js/runtime-main.5c6cadb3.js",
+    "runtime-main.js.map": "/FirebaseApp/static/js/runtime-main.5c6cadb3.js.map",
+    "static/js/2.8a06acca.chunk.js": "/FirebaseApp/static/js/2.8a06acca.chunk.js",
+    "static/js/2.8a06acca.chunk.js.map": "/FirebaseApp/static/js/2.8a06acca.chunk.js.map",
+    "index.html": "/FirebaseApp/index.html",
+    "static/css/main.9efe041e.chunk.css.map": "/FirebaseApp/static/css/main.9efe041e.chunk.css.map",
+    "static/js/2.8a06acca.chunk.js.LICENSE.txt": "/FirebaseApp/static/js/2.8a06acca.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5c6cadb3.js",
+    "static/js/2.8a06acca.chunk.js",
+    "static/css/main.9efe041e.chunk.css",
+    "static/js/main.f160e52e.chunk.js"
+  ]
+}
