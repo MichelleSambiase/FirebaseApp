@@ -1,0 +1,44 @@
+	Crear proyecto en GitHub.
+
+1. Ir a gitHub.com
+
+2. Crear New repository
+
+3. Nombramos el repostorio	
+   Lo hacemos public
+   Agregamos Readme
+   Creamos el repositorio.
+
+4. Clickeamos en Code 
+   Pestaña SSH y lo copiamos.
+
+5. Al lado de la primer carpeta del proyecto (madre)
+   hacemos 'git bash here'		
+   En la terminal escribir "git clone'
+   apretamos shift + insert y se crea.
+
+6. Vamos a la primer carpeta del proyecto y copiamos todo menos node_modules.	
+   /*hasta public*/
+   despues lo copiamos en la carpeta clonada. 
+
+7. Una vez copiamos eliminamos la primer carpeta del proyecto.   
+   en el visual escribir 'git add --all'
+   despues escribimos 'git commit -am "comentario del commit"'
+   Terminamos con 'git push'.
+
+	Visualizacion de la Pagina con Github Pages.
+
+1. escribimos 'yarn add gh-pages'
+   Agregamos el "homepage" al principio del Package.json
+   "homepage": "http://username.github.io/nombre-del-proyecto",
+
+2. Agregamos los scripts:
+    "deploy": "gh-pages -d build".
+
+3. Escribimos 'yarn build' -> Aplicacion optimizada para produccion.
+   Escribimos 'yarn deploy' -> Para subir a github pages.
+
+4. Cuando hacemos cambios correr 'yarn build' y 'yarn deploy'.		
+			 	
+					
+	
