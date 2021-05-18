@@ -9,7 +9,7 @@ import {
 import React from "react";
 
 const CommentInScreen = (props) => {
-  const useStyles = makeStyles({
+  const useStyles = makeStyles((theme) => ({
     root: {
       width: "100%",
       display: "flex",
@@ -22,6 +22,9 @@ const CommentInScreen = (props) => {
       backgroundColor: "#ffffffe6",
       borderRadius: "10px",
       boxShadow: "0px -1px 16px 4px rgb(0 0 0 / 54%)",
+      [theme.breakpoints.down("sm")]: {
+        width: "100%",
+      },
     },
     styleImgIcon: {
       width: "30px",
@@ -46,7 +49,7 @@ const CommentInScreen = (props) => {
     styleComment: {
       fontFamily: "serif",
     },
-  });
+  }));
   const classes = useStyles();
   return (
     <div className={classes.root}>
