@@ -191,7 +191,6 @@ function App() {
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
                 onChange={handleChangeImage}
-                image={image}
                 value={image}
               >
                 {arrayAnimales.map((item, index) => (

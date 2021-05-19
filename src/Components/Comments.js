@@ -19,14 +19,18 @@ const Comments = (props) => {
   const onClickSend = async (e) => {
     e.preventDefault();
 
-    let saveComment = {
-      username: localStorage.getItem("username"),
-      comment: inputComment,
-      image: props.image,
-    };
-    const response = await db.collection("comments").doc().set(saveComment);
-    setData(data.concat(saveComment));
-    setInputComment("");
+    if (inputComment.trim() === "") {
+      alert("You must not leave blank spaces");
+    } else {
+      let saveComment = {
+        username: localStorage.getItem("username"),
+        comment: inputComment,
+        image: props.image,
+      };
+      const response = await db.collection("comments").doc().set(saveComment);
+      setData(data.concat(saveComment));
+      setInputComment("");
+    }
   };
 
   const getMyComments = async () => {
@@ -44,7 +48,11 @@ const Comments = (props) => {
   return (
     <div>
       <CommentInScreen commentInScreen={data} />
-      <InputComment onChangeInput={onChangeInput} onClickSend={onClickSend} />
+      <InputComment
+        onChangeInput={onChangeInput}
+        onClickSend={onClickSend}
+        inputComment={inputComment}
+      />
     </div>
   );
 };

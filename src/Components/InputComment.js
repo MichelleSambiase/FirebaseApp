@@ -31,6 +31,7 @@ const InputComment = (props) => {
           className={classes.input}
           id="standard-basic"
           label="Write here"
+          inputComment={props.inputComment}
           onChange={props.onChangeInput}
         />
         <Button
